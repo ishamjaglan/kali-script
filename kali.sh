@@ -2,6 +2,8 @@
 echo "Script made by Isham Jaglan"
 echo "Follow me on github:" 
 echo "https://github.com/ishamjaglan"
+echo -e "\nBacking Up sources.list to sources.list.backup"
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 echo "# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
 # deb http://http.kali.org/kali kali-rolling main contrib non-free
 
