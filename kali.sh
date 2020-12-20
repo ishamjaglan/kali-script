@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Script made by Isham Jaglan"
-echo "Follow me on github: https://github.com/ishamjaglan"
+echo "Follow me on github:" 
+echo "https://github.com/ishamjaglan"
 echo "# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
 # deb http://http.kali.org/kali kali-rolling main contrib non-free
 
@@ -104,4 +105,5 @@ select choice in "${choices[@]}"; do
 done
 cd .. && rm -rf downloaded-packages
 echo -e "\n\n\nScript made by Isham Jaglan"
-echo "Follow me on github: https://github.com/ishamjaglan"
+echo "Follow me on github:"
+echo "https://github.com/ishamjaglan"
