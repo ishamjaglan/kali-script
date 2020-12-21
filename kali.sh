@@ -109,3 +109,4 @@ cd .. && rm -rf downloaded-packages
 echo -e "\n\n\nScript made by Isham Jaglan"
 echo "Follow me on github:"
 echo "https://github.com/ishamjaglan"
+xdg-open https://github.com/ishamjaglan
