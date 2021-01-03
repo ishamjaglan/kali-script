@@ -83,6 +83,7 @@ select choice in "${choices[@]}"; do
             break
             ;;
   esac
+ done 
   echo -e "\nWant to install Visual Studio Code?"
 PS3="Please select an option : "
 choices=("yes" "no")
@@ -103,7 +104,6 @@ sudo dpkg -i /tmp/code_latest_amd64.deb
             break
             ;;
   esac
-done
 done
 echo -e "\nWant to install Steam?"
 PS3="Please select an option : "
