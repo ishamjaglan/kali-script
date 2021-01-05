@@ -1,6 +1,6 @@
 # kali-script
 	Changes sources.list file to fastest kali server and indian debian server
-	Options to install Discord, Teamviewer, Anydesk and Steam
+	Options to install Discord, Teamviewer, Anydesk, VSCode and Steam
 
 Usage:
 	
