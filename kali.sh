@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Script made by Isham Jaglan"
-echo "Follow me on github:" 
+echo "Follow me on github:"
 echo "https://github.com/ishamjaglan"
 echo -e "\nBacking Up sources.list to sources.list.backup"
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
@@ -74,6 +74,27 @@ select choice in "${choices[@]}"; do
             sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
             sudo apt-get update
             sudo apt-get -y install anydesk
+            sleep 1
+            break
+            ;;
+          no)
+            echo -e "Nise."
+            sleep 1
+            break
+            ;;
+  esac
+ done 
+  echo -e "\nWant to install Visual Studio Code?"
+PS3="Please select an option : "
+choices=("yes" "no")
+select choice in "${choices[@]}"; do
+        case $choice in
+          yes)
+
+            echo -e "\nInstalling Visual Studio Code"
+            wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb
+sudo dpkg -i /tmp/code_latest_amd64.deb
+            sudo apt-get --fix-broken install
             sleep 1
             break
             ;;
