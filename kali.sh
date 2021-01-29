@@ -15,9 +15,9 @@ deb-src http://mirror.cse.iitk.ac.in/debian buster main contrib non-free
 
 # Additional line for source packages
 # deb-src http://http.kali.org/kali kali-rolling main contrib non-free" | sudo tee /etc/apt/sources.list
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install curl
+sudo apt -y update
+sudo apt -y full-upgrade
+sudo apt -y install curl
 mkdir downloaded-packages
 cd downloaded-packages
 echo -e "\nWant to install Discord?"
@@ -30,7 +30,7 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling Discord"
             curl -L "https://discord.com/api/download?platform=linux&format=deb" -o "discord.deb"
             sudo dpkg -i discord.deb
-            sudo apt-get --fix-broken install
+            sudo apt --fix-broken install
             sleep 1
             break
             ;;
@@ -51,7 +51,7 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling Teamviewer"
             curl -L "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb" -o "teamviewer.deb"
             sudo dpkg -i teamviewer.deb
-            sudo apt-get --fix-broken install
+            sudo apt --fix-broken install
             sleep 1
             break
             ;;
@@ -72,8 +72,8 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling AnyDesk"
             wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
             sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
-            sudo apt-get update
-            sudo apt-get -y install anydesk
+            sudo apt update
+            sudo apt -y install anydesk
             sleep 1
             break
             ;;
@@ -94,7 +94,7 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling Visual Studio Code"
             wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb
 sudo dpkg -i /tmp/code_latest_amd64.deb
-            sudo apt-get --fix-broken install
+            sudo apt --fix-broken install
             sleep 1
             break
             ;;
@@ -115,7 +115,7 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling Steam"
             curl -L "https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb" -o "steam.deb"
             sudo dpkg -i steam.deb
-            sudo apt-get --fix-broken install
+            sudo apt --fix-broken install
             sleep 1
             break
             ;;
