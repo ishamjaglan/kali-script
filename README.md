@@ -1,5 +1,5 @@
 # kali-script
-	Changes sources.list file to fastest kali server and indian debian server
+	Replaces the sources.list file and Adds Repositories of Kali, Debian, Parrot Linux 
 	Options to install Discord, Teamviewer, Anydesk, VSCode and Steam
 
 Usage:
