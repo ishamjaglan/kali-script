@@ -4,17 +4,17 @@ echo "Follow me on github:"
 echo "https://github.com/ishamjaglan"
 echo -e "\nBacking Up sources.list to sources.list.backup"
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
-echo "# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
-# deb http://http.kali.org/kali kali-rolling main contrib non-free
+echo "
+deb https://deb.parrot.sh/parrot rolling main contrib non-free
+deb-src https://deb.parrot.sh/parrot rolling main contrib non-free
+deb https://deb.parrot.sh/parrot rolling-security main contrib non-free
+deb-src https://deb.parrot.sh/parrot rolling-security main contrib non-free
 
 deb https://kali.download/kali kali-rolling main contrib non-free
 deb-src https://kali.download/kali kali-rolling main contrib non-free
 
 deb http://mirror.cse.iitk.ac.in/debian buster main contrib non-free
-deb-src http://mirror.cse.iitk.ac.in/debian buster main contrib non-free
-
-# Additional line for source packages
-# deb-src http://http.kali.org/kali kali-rolling main contrib non-free" | sudo tee /etc/apt/sources.list
+deb-src http://mirror.cse.iitk.ac.in/debian buster main contrib non-free" | sudo tee /etc/apt/sources.list
 sudo apt -y update
 sudo apt -y full-upgrade
 sudo apt -y install curl
