@@ -30,7 +30,7 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling Discord"
             curl -L "https://discord.com/api/download?platform=linux&format=deb" -o "discord.deb"
             sudo dpkg -i discord.deb
-            sudo apt --fix-broken install
+            sudo apt --fix-broken -y install
             sleep 1
             break
             ;;
@@ -51,7 +51,7 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling Teamviewer"
             curl -L "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb" -o "teamviewer.deb"
             sudo dpkg -i teamviewer.deb
-            sudo apt --fix-broken install
+            sudo apt --fix-broken -y install
             sleep 1
             break
             ;;
@@ -73,7 +73,7 @@ select choice in "${choices[@]}"; do
             wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
             sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
             sudo apt update
-            sudo apt -y install anydesk
+            sudo apt -y install -y anydesk
             sleep 1
             break
             ;;
@@ -94,7 +94,7 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling Visual Studio Code"
             wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb
 sudo dpkg -i /tmp/code_latest_amd64.deb
-            sudo apt --fix-broken install
+            sudo apt --fix-broken -y install
             sleep 1
             break
             ;;
@@ -115,7 +115,7 @@ select choice in "${choices[@]}"; do
             echo -e "\nInstalling Steam"
             curl -L "https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb" -o "steam.deb"
             sudo dpkg -i steam.deb
-            sudo apt --fix-broken install
+            sudo apt --fix-broken -y install
             sleep 1
             break
             ;;
