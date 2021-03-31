@@ -5,11 +5,6 @@ echo "https://github.com/ishamjaglan"
 echo -e "\nBacking Up sources.list to sources.list.backup"
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 echo "
-deb https://deb.parrot.sh/parrot rolling main contrib non-free
-deb-src https://deb.parrot.sh/parrot rolling main contrib non-free
-deb https://deb.parrot.sh/parrot rolling-security main contrib non-free
-deb-src https://deb.parrot.sh/parrot rolling-security main contrib non-free
-
 deb https://kali.download/kali kali-rolling main contrib non-free
 deb-src https://kali.download/kali kali-rolling main contrib non-free
 
