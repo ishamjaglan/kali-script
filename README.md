@@ -1,8 +1,8 @@
 # kali-script
-	Replaces the sources.list file and Adds Repositories of Kali, Debian, Parrot Linux 
+	Replaces the sources.list file and Adds Repositories of Kali and Debian
 	Options to install Discord, Teamviewer, Anydesk, VSCode and Steam
 
-Usage:
+# Usage:
 	
 	git clone https://github.com/ishamjaglan/kali-script.git
 	cd kali-script
