@@ -1,4 +1,4 @@
-# kali-script
+# Kali-Script
 	Replaces the sources.list file and Adds Repositories of Kali and Debian
 	Options to install Discord, Teamviewer, Anydesk, VSCode and Steam
 
