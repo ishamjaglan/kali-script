@@ -8,3 +8,6 @@
 	cd kali-script
 	sudo chmod +x kali.sh
 	./kali.sh
+
+Request more tools and options at:
+https://github.com/ixh4m/kali-script/issues/new/choose
