@@ -4,7 +4,7 @@
 
 # Usage:
 	
-	git clone https://gitlab.com/ishamjaglan/kali-script.git
+	git clone https://github.com/ixh4m/kali-script.git
 	cd kali-script
 	sudo chmod +x kali.sh
 	./kali.sh
