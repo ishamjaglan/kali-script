@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Script made by Isham Jaglan"
-echo "Follow me on GitLab:"
-echo "https://gitlab.com/ishamjaglan"
+echo "Follow me on GitHub:"
+echo "https://github.com/ixh4m"
 echo -e "\nBacking Up sources.list to sources.list.backup"
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 echo "
@@ -123,6 +123,6 @@ select choice in "${choices[@]}"; do
 done
 cd .. && rm -rf downloaded-packages
 echo -e "\n\n\nScript made by Isham Jaglan"
-echo "Follow me on GitLab:"
-echo "https://gitlab.com/ishamjaglan"
-xdg-open https://gitlab.com/ishamjaglan
+echo "Follow me on GitHub:"
+echo "https://github.com/ixh4m"
+firefox https://github.com/ixh4m
