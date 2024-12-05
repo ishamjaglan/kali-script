@@ -10,6 +10,8 @@ deb-src https://kali.download/kali kali-rolling main contrib non-free
 
 deb http://mirror.cse.iitk.ac.in/debian buster main contrib non-free
 deb-src http://mirror.cse.iitk.ac.in/debian buster main contrib non-free" | sudo tee /etc/apt/sources.list
+gpg --keyserver pgpkeys.mit.edu --recv-key  ED444FF07D8D0BF6
+gpg -a --export ED444FF07D8D0BF6 | sudo apt-key add -
 sudo apt -y update
 sudo apt -y full-upgrade
 sudo apt -y install curl
